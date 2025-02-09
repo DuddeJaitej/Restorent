@@ -1,0 +1,117 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+}
+
+.underline {
+    border: 2px solid orange;
+    width: 50px;
+}
+
+.firstAbout {
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: orange;
+}
+
+.eachImg1 img, .eachImg2 img {
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.eachImg1 img {
+    float: left;
+    margin-right: 30px;
+}
+
+.eachImg1 p, .eachImg2 p {
+    color: rgba(5, 55, 87, 0.558);
+    font-weight: bold;
+}
+
+.eachImg2 img {
+    float: right;
+    margin-left: 30px;
+}
+
+/* Tablet and small laptops */
+@media (max-width: 1024px) {
+    .firstAbout {
+        padding: 30px 50px;
+    }
+
+    .eachImg1 img, .eachImg2 img {
+        width: 60%;
+        margin-bottom: 3%;
+    }
+
+    .eachImg1 img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    .eachImg2 img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .firstAbout {
+        padding: 20px 20px;
+    }
+
+    .eachImg1 img, .eachImg2 img {
+        width: 80%;
+        margin-bottom: 2%;
+    }
+
+    .eachImg1 img, .eachImg2 img {
+        float: none;
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    .eachImg1 p, .eachImg2 p {
+        text-align: start;
+    }
+
+    .underline {
+        margin: 0px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .firstAbout {
+        padding: 10px;
+    }
+
+    .eachImg1 img, .eachImg2 img {
+        width: 100%;
+        margin-bottom: 1%;
+    }
+
+    .eachImg1 p, .eachImg2 p {
+        font-size: 14px;
+        text-align: start;
+    }
+}
+
+/* Larger screens (desktops) */
+@media (min-width: 1200px) {
+    .firstAbout {
+        padding: 60px 150px;
+    }
+
+    .eachImg1 img, .eachImg2 img {
+        width: 50%;
+    }
+}

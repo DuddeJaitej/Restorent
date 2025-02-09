@@ -1,0 +1,86 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(5, 55, 87, 0.558);
+    margin: 50px 150px;
+}
+
+h1{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+#cartItems{
+    background-color: white;
+    color: orange;
+    font-size: 18px;
+    padding: 20px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+
+p{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.orderPlaced, .BackToItems {
+    font-size: 16px;
+    background-color: orange;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    width: 200px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.orderPlaced:hover, .BackToItems:hover {
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+}
+
+.BackToItems {
+    float: right;
+}
+
+.itemsStyle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid orange;
+    margin-bottom: 10px;
+}
+
+.itemsStyle img{
+    margin-right: 20px;
+    width: 80px;
+}
+
+.itemsStyle span{
+    flex-grow: 1;
+}
+
+.itemsStyle button{
+    width: 80px;
+    background-color: orange;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.itemsStyle button:hover {
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+}

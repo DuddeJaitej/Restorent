@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link rel="stylesheet" href="Items.css">
+</head>
+<body>
+    <div class="mainCnt">
+        <div class="navigationImg">
+            <div class="pngImg">
+                <img class="pngImgHome" src="../Restaurant/FoodImages/Home.png" alt="_homePage" onclick="location.href='Restaurant.html'">
+                    <span class="Home">
+                        <a href="Restaurant.html">Home</a>
+                    </span>
+                <img src="../Restaurant/FoodImages/fast-food.png" onclick="location.href='Snacks.html'">
+                    <span class="Snacks">
+                        <a href="Snacks.html">Snacks</a></p>
+                    </span>
+                <img src="../Restaurant/FoodImages/meal.png" onclick="location.href='Veg.html'">
+                <span class="veg">
+                    <a href="Veg.html">Veg</a>
+                </span>
+                    <img src="../Restaurant/FoodImages/biryani.png" onclick="location.href='NonVeg.html'">
+                        <span class="NonVeg">
+                            <a href="NonVeg.html">NonVeg</a>
+                        </span>
+            </div>
+            <div class="JunkFood_Veg">
+                <div class="jf1">
+                    <div class="BestItems">
+                        <img src="./Images/Non-Veg/ChickenLegs.png" >
+                        <p><span>Chicken Legs</span> <br>99/-<button onclick="addToCart('Chicken Legs', 99, './Images/Non-Veg/ChickenLegs.png')"> Add</button></p>
+                    </div>
+                    <div class="BestItems">
+                        <img src="./Images/JunkFood/doughnuts-removebg-preview.png" >
+                        <p><span>Doughnuts</span> <br>220/-<button onclick="addToCart('Doughnuts', 220, './Images/JunkFood/doughnuts-removebg-preview.png')"> Add</button></p>
+                    </div>
+                    <div class="BestItems">
+                        <img src="./Images/Veg/Vegetable_Fried_Rice_-_Indian_Style___Video_-_NISH_KITCHEN-removebg-preview.png" >
+                        <p><span>Vegetable Fried Rice</span> <br>125/-<button onclick="addToCart('Vegetable Fried Rice', 125, './Images/Veg/Vegetable_Fried_Rice_-_Indian_Style___Video_-_NISH_KITCHEN-removebg-preview.png')"> Add</button></p>
+                    </div>
+                    <div class="BestItems">
+                        <img src="./Images/Veg/Paneer_Pakora_Recipe__How_to_make_Paneer_Pakora_Recipe_-_Flavors_of_Mumbai-removebg-preview.png" >
+                        <p><span>Paneer Pakora Recipe</span> <br>160/-<button onclick="addToCart('Paneer Pakora Recipe',160,'./Images/Veg/Paneer_Pakora_Recipe__How_to_make_Paneer_Pakora_Recipe_-_Flavors_of_Mumbai-removebg-preview.png')"> Add</button></p>
+                    </div>
+                    <div class="BestItems">
+                        <img src="./Images/Veg/Instant_Pot_Smoked_Sausage_and_Lentil_Soup-removebg-preview.png" > 
+                        <p><span>Pot Smoked Sausage</span> <br>107/-<button onclick="addToCart('Pot Smoked Sausage',107,'./Images/Veg/Instant_Pot_Smoked_Sausage_and_Lentil_Soup-removebg-preview.png')"> Add</button></p>
+                    </div>
+
+                    <div class="BestItems">
+                        <img src="./Images/JunkFood/burger-removebg-preview.png" >
+                        <p><span>Burger</span> <br>125/-<button onclick="addToCart('Burger', 125, './Images/JunkFood/burger-removebg-preview.png')"> Add</button></p>
+                    </div>
+                    <div class="BestItems">
+                        <img src="./Images/Veg/Healthy_Sprout_Salad_Recipe-removebg-preview.png" >
+                        <p><span>Sprout Salad</span> <br>474/-<button onclick="addToCart('Sprout Salad', 474, './Images/Veg/Healthy_Sprout_Salad_Recipe-removebg-preview.png')"> Add</button></p>
+                    </div>
+                    <div class="BestItems">
+                        <img src="./Images/Non-Veg/Tandoori_Chicken.png" >
+                        <p><span>Tandoori Chicken</span> <br>209/-<button onclick="addToCart('Tandoori Chicken',209,'./Images/Non-Veg/Tandoori_Chicken.png')"> Add</button></p>
+                    </div>
+                    <div class="BestItems">
+                        <img src="./Images/JunkFood/french-fries-removebg-preview.png" >
+                        <p><span>French Fries</span> <br>67/-<button onclick="addToCart('French Fries', 67, './Images/JunkFood/french-fries-removebg-preview.png')"> Add</button></p>
+                    </div>
+                    <div class="BestItems">
+                        <img src="./Images/Non-Veg/PunjabEggCurry.png" > 
+                        <p><span>Punjab Egg Curry</span> <br>56/-<button onclick="addToCart('Punjab Egg Curry',56,'./Images/Non-Veg/PunjabEggCurry.png')"> Add</button></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+<script src="CartscriptFile.js"></script>
+</html>
