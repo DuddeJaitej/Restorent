@@ -1,0 +1,237 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(5, 55, 87, 0.558);
+}
+
+.navContainer {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 150px;
+    position: sticky;
+}
+
+.navbar {
+    color: white;
+}
+
+.home {
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+.rest0 {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.firstNavs a {
+    float: right;
+    margin-right: 20px;
+}
+
+.firstNavs img {
+    float: right;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.firstNavs img:hover {
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.firstNavs a:hover {
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+.fireImage {
+    padding-top: 20px;
+    float: right;
+    padding-right: 100px;
+}
+
+.LeftTextContainer {
+    padding-bottom: 30px;
+}
+
+.LeftText {
+    padding: 150px;
+}
+
+.welcomeR {
+    font-size: 30px;
+    color: white;
+}
+
+.R0 {
+    color: orange;
+}
+
+.restText {
+    font-size: 18px;
+    color: white;
+}
+
+.explore {
+    margin-top: 30px;
+    padding: 10px;
+    width: 150px;
+    font-size: 20px;
+    background-color: orange;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.explore:hover {
+    background-color: white;
+    border: 2px solid orange;
+    color: orange;
+}
+
+/* Contact Section */
+.contact {
+    background-color: white;
+    padding: 30px 150px;
+}
+
+.contact h2 {
+    color: orange;
+    font-weight: bold;
+}
+
+.underline {
+    border-bottom: 2px solid orange;
+    width: 50px;
+}
+
+.ContactDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.ContactDetails label {
+    color: orange;
+}
+
+.ContactDetails p {
+    font-size: 18px;
+}
+
+.send {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.send:hover {
+    color: orange;
+    border: 2px solid orange;
+    background-color: white;
+}
+
+#em, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid orange;
+    color: rgba(5, 55, 87, 0.558);
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .navContainer {
+        padding: 30px 100px;
+    }
+
+    .fireImage {
+        padding-right: 50px;
+        float: none;
+        text-align: center;
+    }
+
+    .LeftText {
+        padding: 50px;
+    }
+
+    .ContactDetails {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .contact {
+        padding: 20px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+    .navContainer {
+        padding: 20px 50px;
+        font-size: 18px;
+    }
+
+    .rest0 {
+        font-size: 24px;
+    }
+
+    .firstNavs a, .firstNavs img {
+        margin-right: 10px;
+    }
+
+    .LeftText {
+        padding: 20px;
+    }
+
+    .fireImage img {
+        height: 300px;
+        padding-right: 0;
+    }
+
+    .contact {
+        padding: 15px;
+    }
+
+    .ContactDetails {
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+
+    #em, textarea {
+        width: 100%;
+    }
+}
+
+/* Large Desktops */
+@media (min-width: 1440px) {
+    .navContainer {
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+
+    .fireImage {
+        padding-right: 200px;
+    }
+
+    .LeftText {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <div id="cartItems"></div>
+    <p>Total Price: <span id="totalPrice">0</span>/-</p>
+
+    <button class="orderPlaced" onclick="location.href='OrderPlaced.html'">Order Now</button>
+    <button class="BackToItems" onclick="location.href='Items.html'">Add more Items</button>
+
+    <script>
+        function displayCart() {
+            const cartData = localStorage.getItem('cart');
+            let totalPrice = 0;
+
+            if (cartData) {
+                const cart = JSON.parse(cartData);
+                const cartItemsContainer = document.getElementById('cartItems');
+                cartItemsContainer.innerHTML = '';
+
+                cart.forEach((item, index) => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.innerHTML = `
+                        <div class="itemsStyle">
+                            <table>
+                                <tr><td><img src="${item.image}" alt="${item.name}" width="50px"></td>
+                                <td><span>${item.name}</span> - ${item.price}/-</td>
+                                <td><button onclick="removeFromCart(${index})">Remove</button></td></tr>
+                            </table>
+                        </div>
+                    `;
+                    cartItemsContainer.appendChild(itemDiv);
+                    totalPrice += item.price;
+                });
+
+                document.getElementById('totalPrice').innerText = totalPrice;
+            }
+        }
+
+        function removeFromCart(index) {
+            const cartData = localStorage.getItem('cart');
+            if (cartData) {
+                let cart = JSON.parse(cartData);
+
+                cart.splice(index, 1);
+
+                localStorage.setItem('cart', JSON.stringify(cart));
+
+                displayCart();
+            }
+        }
+
+        window.onload = displayCart;
+    </script>
+</body>
+</html>
