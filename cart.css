@@ -1,0 +1,54 @@
+body { min-height: 100vh; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0 1rem 3rem; background: linear-gradient(135deg, #053757, #087e8b); }
+
+.cartHeader { width: min(100%, 70rem); margin: 0 auto; padding: 1.5rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
+.cartHeader .siteBrand { color: white; text-decoration: none; font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 800; }
+.cartPage { width: min(100%, 58rem); margin: 0 auto; }
+.cartTitle { padding: 3rem 0 1.5rem; }
+.eyebrow { margin: 0 0 0.4rem; color: #ffd28a; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; }
+
+h1 { margin: 0; color: white; font-size: clamp(2rem, 5vw, 3rem); }
+
+#cartItems { overflow: hidden; background: #fff; color: #053757; font-size: 1rem; padding: 0.75rem 1.25rem; border-radius: 0.75rem; box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.14); }
+
+p { color: white; font-size: 1rem; }
+
+.orderPlaced, .BackToItems { font-size: 1rem; background: #f39a24; color: white; border: 0; padding: 0.85rem 1.25rem; min-width: 10rem; border-radius: 0.35rem; font-weight: 700; cursor: pointer; text-align: center; }
+
+.orderPlaced:hover, .BackToItems:hover {
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+}
+
+.cartFooter { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.5rem 0; }
+.total { margin: 0; }
+.total strong { color: #ffd28a; font-size: 1.25rem; }
+.cartActions { display: flex; gap: 0.75rem; }
+
+.itemsStyle { display: grid; grid-template-columns: 6rem minmax(0, 1fr) auto; align-items: center; gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid #e8edf0; }
+.itemsStyle:last-child { border-bottom: 0; }
+.cartImage { display: grid; place-items: center; width: 6rem; height: 6rem; background: #f5f7f7; border-radius: 0.5rem; }
+.itemDetails { display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; }
+.itemDetails span { color: #053757; font-weight: 700; overflow-wrap: anywhere; }
+.itemDetails strong { color: #f39a24; }
+
+.itemsStyle img { display: block; width: 5rem; height: 5rem; object-fit: contain; }
+
+
+.itemsStyle button { width: 5.5rem; background: #fff; color: #d86e00; border: 1px solid #f39a24; padding: 0.65rem 0.4rem; border-radius: 0.35rem; cursor: pointer; }
+
+.itemsStyle button:hover {
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+}
+
+@media (max-width: 700px) {
+    .cartTitle { padding-top: 2rem; }
+    .cartFooter, .cartActions { flex-direction: column; align-items: stretch; }
+    .cartActions button { width: 100%; }
+    .itemsStyle { grid-template-columns: 4.5rem minmax(0, 1fr); gap: 0.75rem; }
+    .cartImage { width: 4.5rem; height: 4.5rem; }
+    .itemsStyle img { width: 3.75rem; height: 3.75rem; }
+    .itemsStyle button { grid-column: 2; width: 100%; }
+}
