@@ -25,17 +25,19 @@ p { color: white; font-size: 1rem; }
 .total strong { color: #ffd28a; font-size: 1.25rem; }
 .cartActions { display: flex; gap: 0.75rem; }
 
-.itemsStyle { display: grid; grid-template-columns: 6rem minmax(0, 1fr) auto; align-items: center; gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid #e8edf0; }
+.itemsStyle { display: grid; grid-template-columns: 6rem minmax(0, 1fr) auto; align-items: center; gap: 1.25rem; min-height: 6rem; padding: 1rem 0; border-bottom: 1px solid #e8edf0; }
 .itemsStyle:last-child { border-bottom: 0; }
-.cartImage { display: grid; place-items: center; width: 6rem; height: 6rem; background: #f5f7f7; border-radius: 0.5rem; }
+.cartImage { display: grid; place-items: center; width: 6rem; height: 6rem; overflow: hidden; background: #fff8ed; border: 1px solid #f8dfb7; border-radius: 0.65rem; }
 .itemDetails { display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; }
 .itemDetails span { color: #053757; font-weight: 700; overflow-wrap: anywhere; }
 .itemDetails strong { color: #f39a24; }
 
-.itemsStyle img { display: block; width: 5rem; height: 5rem; object-fit: contain; }
+.itemsStyle img { display: block; width: 100%; height: 100%; padding: 0.35rem; object-fit: contain; object-position: center; }
 
 
-.itemsStyle button { width: 5.5rem; background: #fff; color: #d86e00; border: 1px solid #f39a24; padding: 0.65rem 0.4rem; border-radius: 0.35rem; cursor: pointer; }
+.itemsStyle button { width: 5.5rem; background: #fff; color: #d86e00; border: 1px solid #f39a24; padding: 0.65rem 0.4rem; border-radius: 0.35rem; cursor: pointer; transition: background-color 180ms ease, color 180ms ease, transform 180ms ease; }
+
+.itemsStyle button:hover { transform: translateY(-1px); }
 
 .itemsStyle button:hover {
     background-color: white;
