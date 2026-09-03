@@ -7,6 +7,7 @@ A responsive restaurant menu and shopping cart website built with plain HTML, CS
 ## Live Project
 
 - GitHub: [DuddeJaitej/Restorent](https://github.com/DuddeJaitej/Restorent)
+- Live site: [restorent-xvav.vercel.app](https://restorent-xvav.vercel.app/)
 - Deployment: Import the repository into [Vercel](https://vercel.com/) using the `main` branch.
 
 ## Features
